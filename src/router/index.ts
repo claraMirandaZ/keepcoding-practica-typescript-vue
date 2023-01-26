@@ -34,7 +34,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory('/keepcoding-practica-typescript-vue/'),
   routes,
 });
 
