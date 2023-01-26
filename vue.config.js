@@ -4,5 +4,8 @@ module.exports = defineConfig({
 });
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/platzifakestore/' : '/',
+  publicPath:
+    process.env.NODE_ENV === 'production'
+      ? '/keepcoding-practica-typescript-vue/'
+      : '/',
 };
