@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkkeepcoding_practica_typescript_vue"]=self["webpackChunkkeepcoding_practica_typescript_vue"]||[]).push([[769],{769:function(e,r,c){c.r(r),c.d(r,{default:function(){return f}});var i=c(252);const n={class:"profile"},t=(0,i._)("h1",null,"This is your profile page",-1),p=[t];function u(e,r,c,t,u,s){return(0,i.wg)(),(0,i.iD)("div",n,p)}var s={},a=c(744);const o=(0,a.Z)(s,[["render",u]]);var f=o}}]);
+//# sourceMappingURL=769.89198dab.js.map

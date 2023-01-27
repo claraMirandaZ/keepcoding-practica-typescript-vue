@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkkeepcoding_practica_typescript_vue"]=self["webpackChunkkeepcoding_practica_typescript_vue"]||[]).push([[65],{65:function(e,t,c){c.r(t),c.d(t,{default:function(){return l}});var i=c(252);const n={class:"detail"},r=(0,i._)("h1",null,"This is the product detail",-1),u=[r];function a(e,t,c,r,a,s){return(0,i.wg)(),(0,i.iD)("div",n,u)}var s={},p=c(744);const d=(0,p.Z)(s,[["render",a]]);var l=d}}]);
+//# sourceMappingURL=65.65fd2803.js.map
