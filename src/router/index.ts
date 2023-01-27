@@ -5,14 +5,15 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
+    // Eager loading: carga todo al inicio
     component: HomeView,
   },
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    // Route level code-splitting
+    // This generates a separate chunk (about.[hash].js) for this route which is lazy-loaded when the route is visited
+    // Lazy loading: no carga los archivos hasta que se visita este path
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
   },
@@ -27,9 +28,14 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/ProductsView.vue'),
   },
   {
-    path: '/cart',
-    name: 'cart',
-    component: () => import('../views/CartView.vue'),
+    path: '/detail',
+    name: 'detail',
+    component: () => import('../views/DetailView.vue'),
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    component: () => import('../views/ProfileView.vue'),
   },
 ];
 
