@@ -28,9 +28,14 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/DetailView.vue'),
   },
   {
-    path: '/profile',
+    path: '/profile/:id',
     name: 'profile',
     component: () => import('../views/ProfileView.vue'),
+    props: (route) => {
+      const id = Number(route.params.id);
+      const userRole = localStorage.getItem('userRole');
+      return isNaN(id) ? { id: null, userRole } : { id, userRole };
+    },
   },
 ];
 
