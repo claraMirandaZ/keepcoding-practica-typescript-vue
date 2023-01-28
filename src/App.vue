@@ -1,33 +1,25 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/login">Login</router-link> |
-    <router-link to="/products">Products</router-link> |
-    <router-link to="/detail">Detail</router-link> |
-    <router-link to="/profile">Profile</router-link>
-  </nav>
-  <router-view />
+  <div>
+    <NavBar />
+    <router-view />
+  </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: blueviolet;
-}
+<script lang="ts">
+import { defineComponent, ref } from 'vue';
+import NavBar from '@/components/NavBar.vue';
 
-nav {
-  padding: 30px;
-}
+export default defineComponent({
+  name: 'AppComponent',
+  components: {
+    NavBar,
+  },
+  // computed: {
+  //   notLogin() {
+  //     return this.$route.path !== '/';
+  //   },
+  // },
+});
+</script>
 
-nav a {
-  font-weight: bolder;
-  color: mediumpurple;
-}
-
-nav a.router-link-exact-active {
-  color: greenyellow;
-}
-</style>
+<style></style>
